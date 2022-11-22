@@ -34,14 +34,12 @@ function Login() {
     }
     console.log(localLogin);
     const isRegister = localLogin.find(
-      (e) =>
-        userLogin.email === e.email &&
-        userLogin.pass === e.pass
+      (e) => userLogin.email === e.email && userLogin.pass === e.pass
     );
 
     if (isRegister) {
       localStorage.setItem("Login", true);
-      navigate("/home",{replace:true});
+      navigate("/home", { replace: true });
     } else {
       return setStatus(true);
     }
@@ -49,6 +47,11 @@ function Login() {
   return (
     <div className="container d-flex justify-content-center">
       <div className="col-md-6 mt-5">
+        <img
+          src="https://wallpaperaccess.com/full/185289.jpg"
+          className="img-fluid shadow-4 mb-5"
+          alt="..."
+        />
         <form onSubmit={handelLogin}>
           <MDBInput
             className="mb-4"
@@ -93,7 +96,7 @@ function Login() {
             </MDBCol>
           </MDBRow>
 
-          <MDBBtn type="submit" block>
+          <MDBBtn type="submit" block className="mb-1">
             Sign in
           </MDBBtn>
         </form>

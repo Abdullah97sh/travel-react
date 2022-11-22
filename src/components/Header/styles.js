@@ -37,7 +37,8 @@ export default makeStyles((theme)=>({
         display: 'flex', justifyContent: 'space-between',
       },
       appbar:{
-        background: 'linear-gradient(to left, #2C5364, #203A43, #0F2027)',
+        // background: 'linear-gradient(to left, #2C5364, #203A43, #0F2027)',
+        backgroundColor:"#2596be"
 
       }
 }))

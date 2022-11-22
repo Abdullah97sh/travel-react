@@ -22,7 +22,7 @@ const Header = ({setCoordinates}) => {
     <AppBar className={classes.appbar} position='static'>
       <Toolbar className={classes.toolbar}>
         <Typography variant='h5' className={classes.title1}>
-          Travel Companion
+        "Life is short, and the world is wide"
         </Typography>
         <Box display='flex'>
           <Typography variant='h6' className={classes.title2}>

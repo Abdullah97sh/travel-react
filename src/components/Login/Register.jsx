@@ -31,7 +31,7 @@ function Register() {
 
     const isExist = localData.find((e) => {
       e.email = register.email;
-    }); 
+    });
     if (isExist) {
       return alert("This Email IS Used");
     } else {
@@ -43,6 +43,12 @@ function Register() {
   return (
     <div className="container d-flex justify-content-center">
       <div className="col-md-6 mt-5">
+        <img
+          src="https://wallpaperaccess.com/full/185289.jpg"
+          className="img-fluid shadow-4 mb-5"
+          alt="..."
+        />
+        
         <form onSubmit={handleRegister}>
           <MDBRow className="mb-4">
             <MDBCol>
@@ -104,14 +110,14 @@ function Register() {
           />
 
           <MDBBtn type="submit" className="mb-4" block>
-            Sign in
+            Register
           </MDBBtn>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <p>
               Not a member? <a href="#!">Register</a>
             </p>
-          </div>
+          </div> */}
         </form>
       </div>
       {
