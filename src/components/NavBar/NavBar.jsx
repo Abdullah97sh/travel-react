@@ -2,14 +2,17 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
+import { BsFillMapFill } from "react-icons/bs";
 
 function NavBar() {
   return (
     <>
-      <Navbar variant="dark"     style={{ backgroundColor: "#2596be" }}
- >
+      <Navbar variant="dark" style={{ backgroundColor: "#2596be" }}>
         <Container>
-          <Navbar.Brand to="#">Navbar</Navbar.Brand>
+          <BsFillMapFill style={{ color: "white", size: "70px" }} />
+          <Navbar.Brand className="nav-link" to="/home">
+            TRAVEL ADVISOR
+          </Navbar.Brand>
           <Nav className="me-auto">
             <NavLink className="nav-link" to="/home">
               Home
@@ -30,9 +33,6 @@ function NavBar() {
   );
 }
 export default NavBar;
-
-
-
 
 // import Container from 'react-bootstrap/Container';
 // import Nav from 'react-bootstrap/Nav';

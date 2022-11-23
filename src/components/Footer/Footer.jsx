@@ -10,7 +10,7 @@ export default function Footer() {
           className="text-dark"
           href="https://github.com/Abdullah97sh/travel-react"
         >
-          Travel
+          Travel Advisor
         </a>
       </div>
     </MDBFooter>
